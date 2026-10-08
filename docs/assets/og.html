@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>GualbertoOS — Social Preview Card</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1200px;height:630px;overflow:hidden;}
+
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:#f5f5f7;
+    background:#050210;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .card{
+    position:relative;
+    width:1200px;
+    height:630px;
+    padding:58px 64px 50px;
+    display:grid;
+    grid-template-columns:1fr 440px;
+    gap:52px;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse 70% 60% at 78% 22%, rgba(191,90,242,.42) 0%, transparent 62%),
+      radial-gradient(ellipse 55% 55% at 12% 88%, rgba(255,55,95,.28) 0%, transparent 58%),
+      radial-gradient(ellipse 90% 70% at 50% -25%, rgba(255,130,176,.22) 0%, transparent 70%),
+      linear-gradient(158deg,#1e0f38 0%,#120726 42%,#050210 100%);
+  }
+
+  .card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size:48px 48px;
+    -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 30%, transparent 100%);
+    mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 30%, transparent 100%);
+    pointer-events:none;
+  }
+
+  .left{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:100%;
+    max-width:640px;
+  }
+
+  .eyebrow{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:#bf5af2;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:32px;
+    height:1px;
+    background:currentColor;
+    opacity:.55;
+  }
+
+  h1{
+    font-size:76px;
+    font-weight:800;
+    letter-spacing:-.038em;
+    line-height:.98;
+    color:#fff;
+    margin-bottom:22px;
+  }
+  h1 .accent{
+    background:linear-gradient(120deg,#ff82b0 0%,#bf5af2 55%,#64d2ff 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  .desc{
+    font-size:19px;
+    line-height:1.5;
+    color:rgba(255,255,255,.72);
+    max-width:540px;
+    margin-bottom:24px;
+  }
+
+  .pills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .pill{
+    font-size:13px;
+    font-weight:600;
+    padding:7px 14px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.06);
+    color:rgba(255,255,255,.88);
+    letter-spacing:.01em;
+  }
+
+  .footer{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .byline{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.42);
+  }
+  .url{
+    font-size:14px;
+    font-weight:600;
+    color:#bf5af2;
+    letter-spacing:.01em;
+  }
+
+  .right{
+    position:relative;
+    z-index:2;
+    align-self:center;
+  }
+
+  .window{
+    border-radius:14px;
+    overflow:hidden;
+    background:rgba(28,20,44,.82);
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:
+      0 40px 80px rgba(0,0,0,.55),
+      0 0 0 1px rgba(255,255,255,.04) inset;
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+  }
+
+  .titlebar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 14px;
+    background:rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .lights{display:flex;gap:7px;}
+  .light{width:11px;height:11px;border-radius:50%;}
+  .light.r{background:#ff5f57;}
+  .light.y{background:#febc2e;}
+  .light.g{background:#28c840;}
+  .wtitle{
+    flex:1;
+    text-align:center;
+    font-size:12px;
+    font-weight:600;
+    color:rgba(255,255,255,.62);
+    margin-right:40px;
+  }
+
+  .wbody{
+    padding:16px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+  }
+  .tile{
+    aspect-ratio:1/1;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.14);
+    position:relative;
+    overflow:hidden;
+  }
+  .tile::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,rgba(255,255,255,.12) 0%, transparent 42%);
+  }
+  .tile.a{background:linear-gradient(160deg,#64d2ff 0%,#0a84ff 100%);}
+  .tile.b{background:linear-gradient(160deg,#ffd60a 0%,#ff9f0a 100%);}
+  .tile.c{background:linear-gradient(160deg,#bf5af2 0%,#5e5ce6 100%);}
+  .tile.d{background:linear-gradient(160deg,#ff82b0 0%,#ff375f 100%);}
+  .tile.e{background:linear-gradient(160deg,#30d158 0%,#28c840 100%);}
+  .tile.f{background:linear-gradient(160deg,#ff9f0a 0%,#d4526a 100%);}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <div>
+      <div class="eyebrow">Legal Virtual Assistant</div>
+      <h1>J-Nnell<br/><span class="accent">Gualberto</span></h1>
+      <p class="desc">Legal research, document preparation, and case file organization for attorneys and legal teams.</p>
+      <div class="pills">
+        <span class="pill">Legal Research</span>
+        <span class="pill">Document Prep</span>
+        <span class="pill">Case Files</span>
+        <span class="pill">Bluebook · PMLC</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="byline">Makati City, PH · Remote</div>
+      <div class="url">jnnellg.github.io/GualbertoOS</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="window">
+      <div class="titlebar">
+        <div class="lights">
+          <div class="light r"></div>
+          <div class="light y"></div>
+          <div class="light g"></div>
+        </div>
+        <div class="wtitle">Photos — Selected Work</div>
+      </div>
+      <div class="wbody">
+        <div class="tile a"></div>
+        <div class="tile b"></div>
+        <div class="tile c"></div>
+        <div class="tile d"></div>
+        <div class="tile e"></div>
+        <div class="tile f"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
