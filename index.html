@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html data-accent="blue" data-theme="dark" lang="en">
+<head>
+<!-- Desktop interface adapted from the user-selected StuceyOS reference: https://stucey-rosal.github.io/. Personal data and portfolio content replaced for J-Nnell Gualberto. -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GualbertoOS — J-Nnell Gualberto · Legal Virtual Assistant</title>
+<meta content="J-Nnell Dustin A. Gualberto — Legal Virtual Assistant, paralegal-trained, with legal assistant and paralegal internship experience. Interactive desktop portfolio." name="description"/>
+
+<meta content="J-Nnell Dustin A. Gualberto" name="author"/>
+<meta content="#0a84ff" name="theme-color"/>
+
+<link href="assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+
+<link href="./src/desktop.css" rel="stylesheet"/></head>
+<body>
+<svg aria-hidden="true" height="0" style="position:absolute" width="0">
+<defs>
+<lineargradient id="gFinderA" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#5ac8fa"></stop><stop offset="1" stop-color="#007aff"></stop></lineargradient>
+<lineargradient id="gFinderB" x1="1" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f5f5f7"></stop><stop offset="1" stop-color="#d1d1d6"></stop></lineargradient>
+<lineargradient id="gSaf" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#64d2ff"></stop><stop offset="1" stop-color="#0a84ff"></stop></lineargradient>
+<lineargradient id="gMail" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5ac8fa"></stop><stop offset="1" stop-color="#0a84ff"></stop></lineargradient>
+<lineargradient id="gMsg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#32d74b"></stop><stop offset="1" stop-color="#30d158"></stop></lineargradient>
+<lineargradient id="gCode" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#5e5ce6"></stop><stop offset="1" stop-color="#bf5af2"></stop></lineargradient>
+<lineargradient id="gTerm" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3a3a3c"></stop><stop offset="1" stop-color="#1c1c1e"></stop></lineargradient>
+<lineargradient id="gPhoto" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ff375f"></stop><stop offset="1" stop-color="#bf5af2"></stop></lineargradient>
+<lineargradient id="gSet" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#d1d1d6"></stop><stop offset="1" stop-color="#8e8e93"></stop></lineargradient>
+<lineargradient id="gPrev" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#64d2ff"></stop><stop offset="1" stop-color="#30d158"></stop></lineargradient>
+<lineargradient id="gTrash" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e5e5ea"></stop><stop offset="1" stop-color="#8e8e93"></stop></lineargradient>
+<lineargradient id="gCred" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#bf5af2"></stop><stop offset="1" stop-color="#5e5ce6"></stop></lineargradient>
+<clippath id="squircle"><rect height="100" rx="22" width="100"></rect></clippath>
+</defs>
+<symbol id="ic-finder" viewbox="0 0 100 100">
+<rect fill="url(#gFinderA)" height="100" rx="22" width="100"></rect>
+<path clip-path="url(#squircle)" d="M0 22 C0 10 10 0 22 0 H100 V100 H22 C10 100 0 90 0 78 Z" fill="url(#gFinderB)"></path>
+<path d="M0 0 L100 100" stroke="rgba(0,0,0,.12)" stroke-width="6"></path>
+<circle cx="34" cy="42" fill="#1d1d1f" r="5"></circle><circle cx="66" cy="42" fill="#1d1d1f" r="5"></circle>
+<path d="M32 62 Q50 74 68 62" fill="none" stroke="#1d1d1f" stroke-linecap="round" stroke-width="4"></path>
+</symbol>
+<symbol id="ic-safari" viewbox="0 0 100 100">
+<rect fill="url(#gSaf)" height="100" rx="22" width="100"></rect>
+<circle cx="50" cy="50" fill="#f5f5f7" r="32"></circle>
+<circle cx="50" cy="50" fill="#0a84ff" r="28"></circle>
+<g fill="#fff" opacity=".85">
+<rect height="8" rx="1" width="3" x="48.5" y="22"></rect><rect height="8" rx="1" width="3" x="48.5" y="70"></rect>
+<rect height="3" rx="1" width="8" x="22" y="48.5"></rect><rect height="3" rx="1" width="8" x="70" y="48.5"></rect>
+</g>
+<path d="M50 50 L38 62 L62 28 Z" fill="#ff3b30"></path>
+<path d="M50 50 L62 38 L38 72 Z" fill="#f5f5f7"></path>
+</symbol>
+<symbol id="ic-mail" viewbox="0 0 100 100">
+<rect fill="url(#gMail)" height="100" rx="22" width="100"></rect>
+<rect fill="#fff" height="44" rx="6" width="64" x="18" y="28"></rect>
+<path d="M18 34 L50 54 L82 34" fill="none" stroke="#0a84ff" stroke-width="4"></path>
+</symbol>
+<symbol id="ic-msg" viewbox="0 0 100 100">
+<rect fill="url(#gMsg)" height="100" rx="22" width="100"></rect>
+<path d="M22 30 h56 a10 10 0 0 1 10 10 v22 a10 10 0 0 1-10 10 H44 l-16 12 V72 H22 a10 10 0 0 1-10-10 V40 a10 10 0 0 1 10-10z" fill="#fff"></path>
+</symbol>
+<symbol id="ic-code" viewbox="0 0 100 100">
+<rect fill="url(#gCode)" height="100" rx="22" width="100"></rect>
+<path d="M38 30 L22 50 L38 70" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+<path d="M62 30 L78 50 L62 70" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+</symbol>
+<symbol id="ic-term" viewbox="0 0 100 100">
+<rect fill="url(#gTerm)" height="100" rx="22" width="100"></rect>
+<path d="M28 38 L42 50 L28 62" fill="none" stroke="#30d158" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+<path d="M50 62 H74" stroke="#30d158" stroke-linecap="round" stroke-width="6"></path>
+</symbol>
+<symbol id="ic-photo" viewbox="0 0 100 100">
+<rect fill="#1c1c1e" height="100" rx="22" width="100"></rect>
+<circle cx="38" cy="40" fill="#ff375f" r="14"></circle>
+<circle cx="62" cy="40" fill="#ffd60a" r="14"></circle>
+<circle cx="50" cy="58" fill="#30d158" r="14"></circle>
+<circle cx="32" cy="58" fill="#64d2ff" r="12"></circle>
+<circle cx="68" cy="58" fill="#bf5af2" r="12"></circle>
+</symbol>
+<symbol id="ic-set" viewbox="0 0 100 100">
+<rect fill="url(#gSet)" height="100" rx="22" width="100"></rect>
+<circle cx="50" cy="50" fill="none" r="16" stroke="#3a3a3c" stroke-width="7"></circle>
+<g fill="#3a3a3c">
+<rect height="16" rx="2" width="8" x="46" y="14"></rect><rect height="16" rx="2" width="8" x="46" y="70"></rect>
+<rect height="8" rx="2" width="16" x="14" y="46"></rect><rect height="8" rx="2" width="16" x="70" y="46"></rect>
+</g>
+</symbol>
+<symbol id="ic-prev" viewbox="0 0 100 100">
+<rect fill="#e8e8ed" height="100" rx="22" width="100"></rect>
+<rect fill="#fff" height="56" rx="6" stroke="#c7c7cc" width="50" x="18" y="22"></rect>
+<rect fill="url(#gPrev)" height="56" rx="6" width="50" x="32" y="30"></rect>
+<circle cx="50" cy="50" fill="#fff" opacity=".9" r="8"></circle>
+</symbol>
+<symbol id="ic-trash" viewbox="0 0 100 100">
+<rect fill="#6e6e73" height="100" rx="22" width="100"></rect>
+<rect fill="url(#gTrash)" height="46" rx="6" width="40" x="30" y="32"></rect>
+<rect fill="#e5e5ea" height="10" rx="3" width="48" x="26" y="26"></rect>
+<rect fill="#e5e5ea" height="8" rx="2" width="16" x="42" y="20"></rect>
+</symbol>
+<symbol id="ic-cred" viewbox="0 0 100 100">
+<rect fill="url(#gCred)" height="100" rx="22" width="100"></rect>
+<path d="M50 22 L78 34 V52 c0 16-12 28-28 34 C24 80 12 68 12 52 V34 Z" fill="#fff" opacity=".95" transform="translate(10,6) scale(.8)"></path>
+<path d="M42 52 l8 8 16-16" fill="none" stroke="#5e5ce6" stroke-linecap="round" stroke-width="5"></path>
+</symbol>
+<symbol id="ic-pdf" viewbox="0 0 100 100">
+<rect fill="#ff3b30" height="100" rx="22" width="100"></rect>
+<path d="M32 18 h28 l18 18 v48 a6 6 0 0 1-6 6 H32 a6 6 0 0 1-6-6 V24 a6 6 0 0 1 6-6z" fill="#fff"></path>
+<path d="M60 18 v16 h16" fill="#ffd0d0"></path>
+<text fill="#ff3b30" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="50" y="64">PDF</text>
+</symbol>
+</svg>
+<div id="wallpaper"></div>
+<div id="stars"></div>
+<svg aria-hidden="true" id="hills" preserveaspectratio="none" viewbox="0 0 1440 320">
+<path d="M0,224 C180,180 280,260 480,210 C700,150 820,250 1040,200 C1200,160 1320,210 1440,180 L1440,320 L0,320 Z" fill="rgba(8,6,18,.55)"></path>
+<path d="M0,260 C220,220 400,280 620,240 C860,190 1020,270 1440,230 L1440,320 L0,320 Z" fill="rgba(4,4,12,.75)"></path>
+</svg>
+<div id="grain"></div>
+<div id="toast">
+<svg class="ticon" viewbox="0 0 100 100"><use href="#ic-prev"></use></svg>
+<div>
+<div class="ttitle">Preview</div>
+<div class="tmsg" id="toast-msg">Opened Resume.pdf</div>
+</div>
+</div>
+<div id="spotlight">
+<div class="spot-box">
+<input autocomplete="off" id="spot-input" placeholder="Search GualbertoOS" spellcheck="false"/>
+<div id="spot-results"></div>
+</div>
+</div>
+<div id="cc">
+<div class="cc-grid">
+<div class="cc-tile on" id="cc-wifi"><div class="cc-knob">📶</div>Wi‑Fi</div>
+<div class="cc-tile" id="cc-bt"><div class="cc-knob">⬡</div>Bluetooth</div>
+<div class="cc-tile" id="cc-air"><div class="cc-knob">📡</div>AirDrop</div>
+<div class="cc-tile" id="cc-focus"><div class="cc-knob">🌙</div>Focus</div>
+</div>
+<div class="cc-slider">Display<br/><input id="cc-bright" max="100" min="55" type="range" value="100"/></div>
+<div class="cc-slider">Sound<br/><input max="100" min="0" type="range" value="72"/></div>
+<div class="cc-tile" style="margin-top:6px;"><div class="cc-knob">🤖</div><div style="line-height:1.2"><div>Now Playing</div><div style="font-weight:400;font-size:12px;opacity:.8">Building automations…</div></div></div>
+</div>
+<div id="sleep"><div class="big" id="sleep-clock">12:00</div><div style="opacity:.6">Click to wake</div></div>
+<div id="shutdown">
+<div class="dialog" id="shutdown-dialog">
+<h2>Are you sure you want to shut down your computer?</h2>
+<p>Unsaved windows will be restored next time you open GualbertoOS.</p>
+<div class="row">
+<button onclick="hideOverlay('shutdown')" type="button">Cancel</button>
+<button class="pri" onclick="doShutdown()" type="button">Shut Down</button>
+</div>
+</div>
+<div id="off-screen" style="display:none;text-align:center">
+<svg fill="#fff" height="56" viewbox="0 0 14 18" width="48"><path d="M10.5.5c.62.75 1.04 1.79.92 2.83-.9-.04-1.98-.6-2.62-1.35C8.22 1.31 7.72.23 7.86-.8c1 .08 2.02.51 2.64 1.3zM13.07 6.13c-.1.08-1.85 1.07-1.85 3.28 0 2.56 2.28 3.46 2.35 3.48-.04.12-.36 1.26-1.2 2.49-.72 1.06-1.48 2.12-2.7 2.14-1.2.02-1.58-.71-2.96-.71s-1.82.69-2.98.73c-1.18.04-2.08-1.15-2.82-2.2C-.9 13.1-1.66 9.3.7 6.72c1.17-1.28 2.92-2.04 4.67-2.06 1.16-.02 2.25.78 2.96.78.7 0 2.02-.96 3.4-.82.58.02 2.2.23 3.24 1.76-.08.05-.54.32-.9.75z"></path></svg>
+<p style="opacity:.5;margin-top:16px">Click to start GualbertoOS</p>
+</div>
+</div>
+<header id="menubar">
+<div class="left">
+<div aria-label="Apple menu" class="apple-btn" id="apple-btn" role="button" tabindex="0">
+<svg fill="currentColor" height="16" viewbox="0 0 384 512" width="13"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
+<div class="menu-panel">
+<button data-open="about" type="button">About This Mac</button>
+<div class="sep"></div>
+<button data-open="settings" type="button">System Settings…</button>
+<div class="sep"></div>
+<button onclick="goSleep()" type="button">Sleep</button>
+<button onclick="location.reload()" type="button">Restart…</button>
+<button onclick="showShutdown()" type="button">Shut Down…</button>
+</div>
+</div>
+<div class="menu-item bold" id="app-menu" role="button" tabindex="0"><span id="app-name">Finder</span>
+<div class="menu-panel">
+<button data-open="about" type="button">About Me</button>
+<div class="sep"></div>
+<button onclick="hideMenus(); closeFocused()" type="button">Hide <span class="kbd">⌘H</span></button>
+<button onclick="hideMenus(); closeFocused()" type="button">Quit <span class="kbd">⌘Q</span></button>
+</div>
+</div>
+<div class="menu-item" role="button" tabindex="0">File
+      <div class="menu-panel">
+<button data-open="resume" type="button">Open Resume.pdf <span class="kbd">⌘O</span></button>
+<button onclick="hideMenus(); closeFocused()" type="button">Close Window <span class="kbd">⌘W</span></button>
+</div>
+</div>
+<div class="menu-item" role="button" tabindex="0">View
+      <div class="menu-panel">
+<button onclick="hideMenus(); toggleWidgets()" type="button">Toggle Widgets</button>
+<button onclick="hideMenus(); zoomFocused()" type="button">Enter Full Screen <span class="kbd">⌃⌘F</span></button>
+</div>
+</div>
+<div class="menu-item" role="button" tabindex="0">Window
+      <div class="menu-panel">
+<button onclick="hideMenus(); minimizeFocused()" type="button">Minimize <span class="kbd">⌘M</span></button>
+<button data-open="about" type="button">Bring All to Front</button>
+</div>
+</div>
+<div class="menu-item" role="button" tabindex="0">Help
+      <div class="menu-panel">
+<button onclick="hideMenus(); openSpotlight()" type="button">Search GualbertoOS <span class="kbd">⌘Space</span></button>
+<button data-open="terminal" type="button">Terminal Help</button>
+</div>
+</div>
+</div>
+<div class="right">
+<button aria-label="Wi‑Fi" class="status-btn" title="Wi‑Fi">
+<svg viewbox="0 0 24 24"><path d="M12 18.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-4.2-3.3a6 6 0 0 1 8.4 0l-1.4 1.4a4 4 0 0 0-5.6 0l-1.4-1.4zm-3-3.1a10 10 0 0 1 14.4 0l-1.4 1.4a8 8 0 0 0-11.6 0L4.8 12.1z"></path></svg>
+</button>
+<button aria-label="Control Center" class="status-btn" id="cc-toggle" title="Control Center">
+<svg viewbox="0 0 24 24"><rect height="8" rx="2" width="8" x="3" y="4"></rect><rect height="8" rx="2" width="8" x="13" y="4"></rect><rect height="6" rx="2" width="8" x="3" y="14"></rect><rect height="6" rx="2" width="8" x="13" y="14"></rect></svg>
+</button>
+<button aria-label="Spotlight" class="status-btn" id="search-toggle" title="Spotlight">
+<svg viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="6.5" stroke="currentColor" stroke-width="2"></circle><path d="M16 16l5 5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+<button class="status-btn" id="clock">Wed Aug 19 11:15 PM</button>
+</div>
+</header>
+<div id="desktop">
+<div id="icons">
+<button class="desk-icon" data-win="resume"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-pdf"></use></svg><span class="lbl">Resume.pdf</span></button>
+<button class="desk-icon" data-win="projects"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-photo"></use></svg><span class="lbl">Projects</span></button>
+<button class="desk-icon" data-win="terminal"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-term"></use></svg><span class="lbl">Terminal</span></button>
+<button class="desk-icon" data-win="messages"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-msg"></use></svg><span class="lbl">Messages</span></button>
+<button class="desk-icon" data-win="skills"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-code"></use></svg><span class="lbl">Skills.js</span></button>
+</div>
+<div id="widgets">
+<div class="widget" id="note"><div class="whead"><span>Stickies</span><span>Legal VA</span></div><p>📍 Hey, thanks for dropping by! I'm <b>J-Nnell</b> — a <b>Legal Virtual Assistant</b> with a background in Paralegal Studies. I support legal research, document preparation, and case file organization.</p><p>- Email: <a href="mailto:jnnellg@gmail.com">jnnellg@gmail.com</a><br/>- Based in Makati City, Philippines<br/>- BA Political Science · Paralegal Studies</p><p>- Click a desktop icon or the Dock to open apps.<br/>- Open Photos to browse my demonstration templates.<br/>- Open Terminal and type <b>help</b> to explore.<br/>- Use Messages to prepare an email enquiry.</p></div>
+<div class="widget" id="weather">
+<div class="whead"><span>Weather</span><span id="w-loc">Makati, PH</span></div>
+<div class="wrow">
+<div>
+<div class="wtemp" id="w-temp">--°</div>
+<div class="wdesc" id="w-desc">Loading…</div>
+</div>
+<div class="wicon" id="w-icon">⛅</div>
+</div>
+<div class="wextra" id="w-extra">Fetching live data…</div>
+</div>
+<div class="widget" id="calendar">
+<div class="whead"><span class="cmonth" id="cal-month">Month</span></div>
+<table>
+<thead><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr></thead>
+<tbody id="cal-body"></tbody>
+</table>
+</div>
+<div class="widget" id="sysres"><div class="whead"><span>Legal Toolkit</span><span>Résumé-listed</span></div><div class="sr-row"><div class="sr-label"><span>Typing speed</span><b id="m1val">70 WPM</b></div><div class="bar"><i id="m1bar" style="width:70%"></i></div></div><div class="sr-row"><div class="sr-label"><span>Internship roles</span><b id="m2val">2</b></div><div class="bar"><i id="m2bar" style="width:100%"></i></div></div><div class="sr-row"><div class="sr-label"><span>Academic foundation</span><b id="m3val">BA</b></div><div class="bar"><i id="m3bar" style="width:100%"></i></div></div></div>
+<div class="widget" id="stats">
+<div class="whead"><span>Portfolio</span><span>Live</span></div>
+<div class="st-row"><b id="st-projects">—</b><span>demonstration templates</span></div>
+<div class="st-row"><b id="st-tools">—</b><span>skills &amp; tools tagged</span></div>
+<div class="st-row"><b>Remote</b><span>Arrangements by discussion</span></div>
+</div>
+</div>
+</div>
+<div id="dock-wrap">
+<div id="dock">
+<button class="dock-btn" data-label="Finder" data-win="about"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-finder"></use></svg></span><i class="dot"></i><span class="tip">Finder</span></button>
+<button class="dock-btn" data-label="Safari" data-win="contact"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-safari"></use></svg></span><i class="dot"></i><span class="tip">Safari</span></button>
+<button class="dock-btn" data-label="Code" data-win="skills"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-code"></use></svg></span><i class="dot"></i><span class="tip">Code</span></button>
+<button class="dock-btn" data-label="Terminal" data-win="terminal"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-term"></use></svg></span><i class="dot"></i><span class="tip">Terminal</span></button>
+<button class="dock-btn" data-label="Messages" data-win="messages"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-msg"></use></svg></span><i class="dot"></i><span class="tip">Messages</span></button>
+<button class="dock-btn" data-label="Mail" data-win="services"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-mail"></use></svg></span><i class="dot"></i><span class="tip">Mail</span></button>
+<button class="dock-btn" data-label="Photos" data-win="projects"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-photo"></use></svg></span><i class="dot"></i><span class="tip">Photos</span></button>
+<button class="dock-btn" data-label="Credentials" data-win="education"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-cred"></use></svg></span><i class="dot"></i><span class="tip">Credentials</span></button>
+<button class="dock-btn" data-label="System Settings" data-win="settings"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-set"></use></svg></span><i class="dot"></i><span class="tip">System Settings</span></button>
+<button class="dock-btn" data-label="Preview" data-win="resume"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-prev"></use></svg></span><i class="dot"></i><span class="tip">Preview</span></button>
+<div class="dock-sep"></div>
+<button class="dock-btn" data-label="Trash" data-win="trash"><span class="bounce"><svg class="glyph" viewbox="0 0 100 100"><use href="#ic-trash"></use></svg></span><i class="dot"></i><span class="tip">Trash</span></button>
+</div>
+</div>
+<!-- WINDOWS -->
+<div class="window" data-app="Finder" id="win-about">
+<div class="titlebar" data-win="about">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">About Me</div>
+</div>
+<div class="tb">
+<button class="tb-btn" type="button">◀</button>
+<button class="tb-btn" type="button">▶</button>
+<input class="tb-search" onfocus="openSpotlight()" placeholder="Search"/>
+</div>
+<div class="finder">
+<aside class="finder-side">
+<div class="side-lab">Favorites</div>
+<button class="side-item active" type="button">📁 About Me</button>
+<button class="side-item" data-open="projects" type="button">🖼 Projects</button>
+<button class="side-item" data-open="resume" type="button">📄 Resume.pdf</button>
+<button class="side-item" data-open="skills" type="button">{} Skills.js</button>
+<div class="side-lab">iCloud</div>
+<button class="side-item" data-open="services" type="button">✉ Services</button>
+<button class="side-item" data-open="education" type="button">🎓 Credentials</button>
+<button class="side-item" data-open="contact" type="button">🌐 Contact</button>
+</aside>
+<div class="finder-main"><div class="avail"><b>Legal Virtual Assistant</b><span>Paralegal-trained support for attorneys and legal teams. Working arrangements and availability can be discussed by email.</span><span class="avail-links"><a href="mailto:jnnellg@gmail.com">jnnellg@gmail.com</a></span></div><h3>Who I Am</h3><p>Recent graduate with a Bachelor of Arts in Political Science, major in Paralegal Studies. I bring strong research, analytical, and writing skills, with hands-on experience preparing legal documents. Highly detail-oriented, with a proven ability to manage complex information while maintaining strict confidentiality.</p><p>My approach centres on accuracy, confidentiality, and organized handoffs. I work within a team's instructions and review process; I do not provide independent legal advice or representation.</p><h4>Meet J-Nnell</h4><img alt="J-Nnell Dustin A. Gualberto" src="portrait.png" style="width:150px;height:150px;object-fit:cover;border-radius:14px;margin:6px 0 18px"/><table class="info-table"><tr><td>Full Name</td><td>J-Nnell Dustin A. Gualberto</td></tr><tr><td>Role</td><td>Legal Virtual Assistant</td></tr><tr><td>Degree</td><td>BA Political Science — Major in Paralegal Studies</td></tr><tr><td>University</td><td>University of Makati — J.P. Rizal Extension, West Rembo, Taguig</td></tr><tr><td>Location</td><td>3163 A. Mabini Street, Poblacion, Makati City</td></tr><tr><td>Email</td><td>jnnellg@gmail.com</td></tr><tr><td>Phone</td><td>09458812036</td></tr><tr><td>Core Focus</td><td>Legal research · Document preparation · Case file organization</td></tr></table><div class="stat-row"><div class="stat"><b>70</b><span>WPM — résumé-listed</span></div><div class="stat"><b>2</b><span>Internship roles listed</span></div><div class="stat"><b>BA</b><span>Political Science</span></div><div class="stat"><b>3</b><span>Demonstration templates</span></div></div><h4>Work History</h4><p><b>Legal Assistant Internship</b><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p><p><b>Paralegal Internship</b><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p><p><b>Reference</b><br/>Ms. Lyka M. Gersalia — Legal Secretary, SIMPLEX PHILIPPINES MANAGEMENT INC.</p><p>Internship dates and further role details can be provided on request.</p></div>
+</div>
+<div class="resize" data-win="about"></div>
+</div>
+<div class="window" data-app="Photos" id="win-projects">
+<div class="titlebar" data-win="projects">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Photos — Selected Work</div>
+</div>
+<div class="wbody">
+<div id="proj-gallery"><h3>Demonstration Templates</h3><p>Illustrative samples created for this portfolio, built around the competencies listed in my résumé — case file organization, legal research &amp; analysis, and legal document preparation &amp; review. These are not client work or legal advice. Click a preview for details and a download.</p><div class="gal-grid" id="gal-flagship"></div><div class="gal-grid" id="gal-self"></div><div class="gal-grid" id="gal-earlier"></div></div>
+<div hidden="" id="proj-detail">
+<button class="pd-back" id="pd-back" type="button">‹ All Projects</button>
+<div class="pd-shot" id="pd-shot"></div>
+<h4 class="pd-title" id="pd-title"></h4>
+<p class="pd-sub" id="pd-sub"></p>
+<span class="pd-draft" hidden="" id="pd-draft">Draft entry — the description below is placeholder text, not a record of the real work. Replace it before publishing.</span>
+<p id="pd-body"></p>
+<div id="pd-case"></div>
+<div id="pd-tags"></div>
+<div class="pd-nav">
+<button class="cta-btn alt" id="pd-prev" type="button">‹ Previous</button>
+<button class="cta-btn alt" id="pd-next" type="button">Next ›</button>
+</div>
+</div>
+</div>
+<div class="resize" data-win="projects"></div>
+</div>
+<div class="window" data-app="Code" id="win-skills">
+<div class="titlebar" data-win="skills">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Skills.js — Edited</div>
+</div>
+<div class="wbody"><pre class="code-block"><span class="c">// professionalSkills — from résumé</span>
+<span class="k">const</span> professionalSkills <span class="p">= [</span>
+  <span class="s">"Legal Research &amp; Analysis"</span>,
+  <span class="s">"Legal Document Preparation &amp; Review"</span>,
+  <span class="s">"Written &amp; Verbal Communication"</span>,
+  <span class="s">"Attention to Detail &amp; Accuracy"</span>,
+  <span class="s">"Confidentiality &amp; Discretion"</span>,
+  <span class="s">"Time Management &amp; Deadline Adherence"</span>,
+  <span class="s">"Case File Organization &amp; Management"</span>,
+  <span class="s">"Negotiable Instruments"</span>
+<span class="p">];</span>
+
+<span class="c">// technicalSkills — from résumé</span>
+<span class="k">const</span> technicalSkills <span class="p">= [</span>
+  <span class="s">"Microsoft Office Suite \u2014 Advanced"</span>,
+  <span class="s">"Legal Research Databases (Digest PH, Lawphil Project)"</span>,
+  <span class="s">"Google Workspace"</span>,
+  <span class="s">"Document Management &amp; Filing Systems"</span>,
+  <span class="s">"Legal Citation (Bluebook, PMLC format)"</span>,
+  <span class="s">"Case Management Software"</span>,
+  <span class="s">"Typing Speed: 70 WPM"</span>
+<span class="p">];</span>
+
+<span class="c">// computerProficiency — from résumé</span>
+<span class="k">const</span> computerProficiency <span class="p">= [</span>
+  <span class="s">"Advanced Microsoft Word \u2014 legal document formatting, templates, track changes"</span>,
+  <span class="s">"Microsoft Excel \u2014 data organization, case tracking spreadsheets, formulas"</span>,
+  <span class="s">"Microsoft PowerPoint \u2014 professional presentations for case briefings"</span>,
+  <span class="s">"Legal research platforms &amp; citation management tools"</span>,
+  <span class="s">"PDF editing &amp; document conversion"</span>
+<span class="p">];</span>
+
+<span class="c">// softSkills — from résumé</span>
+<span class="k">const</span> softSkills <span class="p">= [</span>
+  <span class="s">"Studied Negotiable Instruments"</span>,
+  <span class="s">"Prioritizes multiple deadlines and manages heavy workload"</span>,
+  <span class="s">"Self-directed learner committed to understanding complex legal concepts"</span>,
+  <span class="s">"Strong work ethic with commitment to accuracy and confidentiality"</span>,
+  <span class="s">"Excellent written communication for legal documentation"</span>
+<span class="p">];</span>
+
+<span class="k">export default</span> { professionalSkills, technicalSkills, computerProficiency, softSkills };</pre><p>Legal support grounded in accuracy, discretion, and organized information.</p></div>
+<div class="resize" data-win="skills"></div>
+</div>
+<div class="window" data-app="Mail" id="win-services">
+<div class="titlebar" data-win="services">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Inbox — What I Offer</div>
+</div>
+<div class="wbody"><h3>Legal Support Services</h3><div class="svc-card"><div class="stitle">Legal Research &amp; Analysis</div><p style="margin:0">Locating authorities, organizing findings, and preparing research summaries for attorney review. Familiar with Digest PH and the Lawphil Project, and with Bluebook and PMLC citation formats.</p></div><div class="svc-card"><div class="stitle">Legal Document Preparation</div><p style="margin:0">Formatting, proofreading, templates, track changes, and PDF editing and document conversion with careful version control. Advanced Microsoft Word proficiency.</p></div><div class="svc-card"><div class="stitle">Case File Organization</div><p style="margin:0">Document indexes, structured folders, and tracking spreadsheets in Excel that make case information easier to locate. Familiar with document management and filing systems.</p></div><div class="svc-card"><div class="stitle">Legal Administrative Support</div><p style="margin:0">Task organization, deadline tracking, and clear written communication within established team processes. Confidentiality and discretion maintained at all times.</p></div><p>Administrative and paralegal support under appropriate supervision. No independent legal advice or representation.</p><a class="cta-btn" href="mailto:jnnellg@gmail.com">Discuss your support needs</a></div>
+<div class="resize" data-win="services"></div>
+</div>
+<div class="window" data-app="Credentials" id="win-education">
+<div class="titlebar" data-win="education">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Credentials</div>
+</div>
+<div class="wbody"><h3>College / University</h3><p><b>Bachelor of Arts in Political Science</b><br/>Major in Paralegal Studies<br/>University of Makati — J.P. Rizal Extension, West Rembo, Taguig</p><h3>Education History</h3><p><b>Senior High School</b><br/>University of Makati — J.P. Rizal Extension, West Rembo, Taguig</p><p><b>Junior High School</b><br/>Makati High School — Gen. Luna Street, Poblacion, Makati</p><p><b>Grade School</b><br/>Makati Elementary School — Gen. Luna Street, Poblacion, Makati</p><h3>Internship Experience</h3><p><b>Legal Assistant Intern</b><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p><p><b>Paralegal Intern</b><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p><h3>Reference</h3><p><b>Ms. Lyka M. Gersalia</b><br/>Legal Secretary, SIMPLEX PHILIPPINES MANAGEMENT INC.</p><h3>Academic &amp; Technical Foundation</h3><p>Legal research and analysis · Legal citation (Bluebook and PMLC) · Negotiable instruments · Microsoft Office Suite · Google Workspace · Document management &amp; filing systems · Case management software · Typing: 70 WPM</p></div>
+<div class="resize" data-win="education"></div>
+</div>
+<div class="window" data-app="Safari" id="win-contact">
+<div class="titlebar" data-win="contact">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Safari</div>
+</div>
+<div class="safari-bar">
+<button class="tb-btn" type="button">◀</button>
+<button class="tb-btn" type="button">▶</button>
+<div class="url-field"><span>🔒</span> gualberto / contact</div>
+</div>
+<div class="wbody"><h3>Favorites</h3><p>Let's discuss your legal team's support needs, the tasks involved, and your preferred working arrangement.</p><div class="fav-grid"><a class="fav" href="mailto:jnnellg@gmail.com"><i>✉</i><span>Mail</span></a><button class="fav" data-open="messages"><i>💬</i><span>Messages</span></button><button class="fav" data-open="resume"><i>📄</i><span>Resume</span></button><button class="fav" data-open="services"><i>🛠</i><span>Services</span></button><button class="fav" data-open="education"><i>🎓</i><span>Credentials</span></button><button class="fav" data-open="projects"><i>🖼</i><span>Sample work</span></button></div><a class="cta-btn" href="mailto:jnnellg@gmail.com">jnnellg@gmail.com</a><button class="cta-btn alt" id="copy-email">Copy email</button><p>3163 A. Mabini Street, Poblacion, Makati City<br/>09458812036</p><p style="font-size:12px">Email links open your email application. Share general requirements, rather than confidential case documents, in your initial enquiry.</p></div>
+<div class="resize" data-win="contact"></div>
+</div>
+<div class="window" data-app="System Settings" id="win-settings">
+<div class="titlebar" data-win="settings">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">System Settings</div>
+</div>
+<div class="settings">
+<aside class="set-side">
+<div class="side-lab">System</div>
+<button class="side-item active" type="button">Appearance</button>
+</aside>
+<div class="set-main">
+<h3>Appearance</h3>
+<p style="margin-bottom:6px">Light / Dark</p>
+<div class="seg" id="theme-seg">
+<button data-theme="light" type="button">Light</button>
+<button class="active" data-theme="dark" type="button">Dark</button>
+<button data-theme="auto" type="button">Auto</button>
+</div>
+<p style="margin-bottom:6px">Accent color</p>
+<div class="swatches">
+<button class="swatch-btn active" data-accent="#0a84ff" style="background:#0a84ff" title="Blue"></button>
+<button class="swatch-btn" data-accent="#38e1c9" style="background:#38e1c9" title="Teal"></button>
+<button class="swatch-btn" data-accent="#bf5af2" style="background:#bf5af2" title="Purple"></button>
+<button class="swatch-btn" data-accent="#ff375f" style="background:#ff375f" title="Pink"></button>
+<button class="swatch-btn" data-accent="#ff9f0a" style="background:#ff9f0a" title="Orange"></button>
+<button class="swatch-btn" data-accent="#30d158" style="background:#30d158" title="Green"></button>
+</div>
+<div class="toggle-row"><span>Twinkling stars</span><input checked="" class="toggle" id="toggle-stars" type="checkbox"/></div>
+<div class="toggle-row" style="border-bottom:none;"><span>Reduce motion</span><input class="toggle" id="toggle-motion" type="checkbox"/></div>
+<p style="margin-top:16px;color:var(--text-2)">Try Spotlight (⌘Space), drag a title bar, resize a window, or explore Terminal. This portfolio uses a Vite build for GitHub Pages.</p>
+</div>
+</div>
+<div class="resize" data-win="settings"></div>
+</div>
+<div class="window" data-app="Preview" id="win-resume">
+<div class="titlebar" data-win="resume">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Preview — Resume.pdf</div>
+</div>
+<div class="wbody">
+<div class="pdf-toolbar">
+<span class="pdf-badge">PDF</span>
+<span class="pdf-name">J-Nnell-Gualberto-Resume.pdf</span>
+<button onclick="window.print()" type="button">Print</button>
+<a download="J-Nnell-Gualberto-Resume.pdf" href="J-Nnell-Gualberto-Resume.pdf" id="resume-dl">Download</a>
+</div>
+<article id="resume-paper">
+<h2>J-Nnell Dustin A. Gualberto</h2>
+<div class="sub">
+  Email: <a href="mailto:jnnellg@gmail.com">jnnellg@gmail.com</a> &nbsp;|&nbsp;
+  Phone: 09458812036 &nbsp;|&nbsp;
+  Address: 3163 A. Mabini Street, Poblacion, Makati City
+</div>
+
+<h3>Professional Summary</h3>
+<p>Recent graduate with a Bachelor of Arts in Political Science major in Paralegal Studies. Brings strong research, analytical, and writing skills, with hands-on experience preparing legal documents. Highly detail-oriented, with a proven ability to manage complex information while maintaining strict confidentiality. Bringing academic training and hands-on experience to a fast-paced, dynamic professional environment.</p>
+
+<h3>Educational Background</h3>
+<ul>
+  <li><strong>Grade School:</strong> Makati Elementary School — Gen. Luna Street, Poblacion, Makati</li>
+  <li><strong>Junior High School:</strong> Makati High School — Gen. Luna Street, Poblacion, Makati</li>
+  <li><strong>Senior High School:</strong> University of Makati — J.P. Rizal Extension, West Rembo, Taguig</li>
+  <li><strong>College / University:</strong> University of Makati — J.P. Rizal Extension, West Rembo, Taguig</li>
+</ul>
+
+<h3>Personal Details</h3>
+<p>
+  Age: 23 years old &nbsp;&middot;&nbsp;
+  Date of Birth: June 14, 2003 &nbsp;&middot;&nbsp;
+  Place of Birth: Camiling, Tarlac<br/>
+  Gender: Male &nbsp;&middot;&nbsp;
+  Marital Status: Single &nbsp;&middot;&nbsp;
+  Religion: Roman Catholic<br/>
+  Nationality: Filipino &nbsp;&middot;&nbsp;
+  Height: 5'6 ft &nbsp;&middot;&nbsp;
+  Weight: 62.5 kg
+</p>
+
+<h3>Work Experience</h3>
+<p><strong>Legal Assistant Internship</strong><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p>
+<p><strong>Paralegal Internship</strong><br/>SIMPLEX PHILIPPINES MANAGEMENT INC.</p>
+
+<h3>Reference</h3>
+<p><strong>Ms. Lyka M. Gersalia</strong> — Legal Secretary, SIMPLEX PHILIPPINES MANAGEMENT INC.</p>
+
+<h3>Skills and Competencies — Technical Skills</h3>
+<ul>
+  <li>Microsoft Office Suite — Advanced</li>
+  <li>Legal Research Databases (Digest PH, Lawphil Project)</li>
+  <li>Google Workspace</li>
+  <li>Document Management &amp; Filing Systems</li>
+  <li>Legal Citation (Bluebook, PMLC format)</li>
+  <li>Case Management Software</li>
+  <li>Typing Speed: 70 WPM</li>
+</ul>
+
+<h3>Additional Qualifications — Computer Proficiency</h3>
+<ul>
+  <li><strong>Advanced Microsoft Word:</strong> Legal document formatting, templates, track changes</li>
+  <li><strong>Microsoft Excel:</strong> Data organization, case tracking spreadsheets, formulas</li>
+  <li><strong>Microsoft PowerPoint:</strong> Professional presentations for case briefings</li>
+  <li>Legal research platforms and citation management tools</li>
+  <li>PDF editing and document conversion</li>
+</ul>
+
+<h3>Professional Skills</h3>
+<ul>
+  <li>Legal Research &amp; Analysis</li>
+  <li>Legal Document Preparation &amp; Review</li>
+  <li>Written &amp; Verbal Communication</li>
+  <li>Attention to Detail &amp; Accuracy</li>
+  <li>Confidentiality &amp; Discretion</li>
+  <li>Time Management &amp; Deadline Adherence</li>
+  <li>Case File Organization &amp; Management</li>
+  <li>Negotiable Instruments</li>
+</ul>
+
+<h3>Soft Skills</h3>
+<ul>
+  <li>Studied Negotiable Instruments</li>
+  <li>Demonstrated ability to prioritize multiple deadlines and manage heavy workload</li>
+  <li>Self-directed learner committed to understanding complex legal concepts</li>
+  <li>Strong work ethic with commitment to accuracy and confidentiality</li>
+  <li>Excellent written communication skills suitable for legal documentation</li>
+</ul>
+</article>
+</div>
+<div class="resize" data-win="resume"></div>
+</div>
+<div class="window" data-app="Trash" id="win-trash">
+<div class="titlebar" data-win="trash">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Trash</div>
+</div>
+<div class="wbody">
+<h3>Empty</h3>
+<p>Nothing here — organized files make for a clearer workday.</p>
+</div>
+<div class="resize" data-win="trash"></div>
+</div>
+<div class="window" data-app="Messages" id="win-messages">
+<div class="titlebar" data-win="messages">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">Messages</div>
+</div>
+<div class="wbody">
+<div class="imsg">
+<aside class="imsg-list">
+<button class="imsg-conv active" data-thread="jnnell" type="button">
+<span class="av" style="background:linear-gradient(180deg,#5ac8fa,#007aff)">JG</span>
+<span class="meta"><b>J-Nnell Gualberto</b><span id="imsg-preview">Prepare an email enquiry…</span></span>
+</button>
+<button class="imsg-conv" data-thread="prompts" type="button">
+<span class="av" style="background:linear-gradient(180deg,#bf5af2,#5e5ce6)">PL</span>
+<span class="meta"><b>Legal Notes</b><span>Legal workflow notes</span></span>
+</button>
+</aside>
+<div class="imsg-thread">
+<div class="imsg-header">
+<span class="av" id="imsg-face">JG</span>
+<b id="imsg-name">J-Nnell Gualberto</b>
+<small id="imsg-sub">iMessage</small>
+</div>
+<div class="imsg-scroll" id="msg-scroll"></div>
+<div class="imsg-status" id="imsg-status"></div>
+<form class="imsg-compose" id="msg-form">
+<textarea autocomplete="off" id="msg-input" placeholder="Write your email enquiry" rows="1"></textarea>
+<button aria-label="Prepare email draft" class="imsg-send" disabled="" id="imsg-send" type="submit">
+<svg fill="none" height="14" viewbox="0 0 24 24" width="14"><path d="M12 19V5M12 5l-7 7M12 5l7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></path></svg>
+</button>
+</form>
+<div class="imsg-readonly" id="imsg-readonly" style="display:none">Illustrative legal support workflow notes.</div>
+</div>
+</div>
+</div>
+<div class="resize" data-win="messages"></div>
+</div>
+<div class="window" data-app="Terminal" id="win-terminal">
+<div class="titlebar" data-win="terminal">
+<div class="traffic"><button class="tl close" data-act="close"><span>×</span></button><button class="tl min" data-act="min"><span>−</span></button><button class="tl zoom" data-act="zoom"><span>+</span></button></div>
+<div class="wtitle">jnnell@portfolio — zsh</div>
+</div>
+<div class="wbody">
+<div id="term-screen"></div>
+<div id="term-input-row">
+<span class="prompt">jnnell@portfolio ~ %</span>
+<input autocomplete="off" id="term-input" placeholder="type help" spellcheck="false"/>
+</div>
+</div>
+<div class="resize" data-win="terminal"></div>
+</div>
+
+<script src="./src/desktop.js" type="module"></script></body>
+</html>
